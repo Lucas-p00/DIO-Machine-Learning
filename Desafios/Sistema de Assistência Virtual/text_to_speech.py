@@ -6,4 +6,6 @@ def translation(text, language, arquive):
                   slow = False)
     gtts_object.save(f'audios/{arquive}')
 
-translation("How are you doing?", "en", "audio.wav")
+text = input("Digite sua frase em português:\n")
+
+translation(text, "pt", "audio.wav")
